@@ -1,0 +1,23 @@
+{
+  "name": "dots",
+  "version": "0.0.0",
+  "description": "a game about connecting dots",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessehattabaugh/dots.git"
+  },
+  "keywords": [
+    "pwa",
+    "game"
+  ],
+  "author": "Jesse Hattabaugh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jessehattabaugh/dots/issues"
+  },
+  "homepage": "https://github.com/jessehattabaugh/dots#readme"
+}
