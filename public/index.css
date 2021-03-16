@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 :root {
 	--colorBg: #111;
 	--colorFont: white;
@@ -10,10 +12,13 @@
 body {
 	background-color: var(--colorBg);
 	color: var(--colorFont);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: xx-large;
 	position: relative;
 	padding-bottom: 3em;
+}
+header h1{
+	text-transform: uppercase;
 }
 nav div {
 	display: inline-block;
@@ -73,4 +78,19 @@ footer {
 footer a {
 	font-size: 3em;
 	margin: .5em;
+}
+
+header div {
+	width: 49%;
+	display: inline-block;
+	text-align: center;
+
+}
+header div::first-letter {
+	font-size: 150%;
+}
+header div output {
+	margin-left: .25em;
+	font-size: 3em;
+	vertical-align: sub;
 }
