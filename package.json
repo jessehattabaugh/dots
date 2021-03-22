@@ -4,6 +4,11 @@
 		"url": "https://github.com/jessehattabaugh/dots/issues"
 	},
 	"description": "a game about dots",
+	"devDependencies": {
+		"next": "^10.0.9",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
 	"homepage": "https://github.com/jessehattabaugh/dots#readme",
 	"license": "UNLICENSED",
 	"name": "dots",
@@ -13,6 +18,12 @@
 		"url": "git+https://github.com/jessehattabaugh/dots.git"
 	},
 	"scripts": {
+		"build": "next build",
+		"debug": "next build --debug",
+		"dev": "next dev",
+		"export": "npm run build && next export",
+		"profile": "next build --profile",
+		"start": "npm run build && next start",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"version": "0.0.0"
