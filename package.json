@@ -1,0 +1,19 @@
+{
+	"author": "Jesse Hattabaugh<arkanciscan@gmail.com>",
+	"bugs": {
+		"url": "https://github.com/jessehattabaugh/dots/issues"
+	},
+	"description": "a game about dots",
+	"homepage": "https://github.com/jessehattabaugh/dots#readme",
+	"license": "UNLICENSED",
+	"name": "dots",
+	"private": "true",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jessehattabaugh/dots.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"version": "0.0.0"
+}
