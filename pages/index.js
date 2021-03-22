@@ -1,17 +1,21 @@
+import Link from 'next/link';
+
 export default HomePage;
 
 function HomePage() {
-	const square = 6;
-
-	const rows = Array(square).fill('');
-	const cols = Array(square).fill('');
-
 	return (
-		<main>
-			<h1>dots</h1>
-			<article>
-				{rows.map(() => cols.map(() => <button></button>))}
-			</article>
-		</main>
+		<>
+			<header>
+				<h1>dots</h1>
+			</header>
+			<nav>
+				<Link href="/timed">
+					<a>Timed</a>
+				</Link>
+				<Link href="/moves">
+					<a>Moves</a>
+				</Link>
+			</nav>
+		</>
 	);
 }
