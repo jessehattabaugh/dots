@@ -1,6 +1,8 @@
 .knob {
-	border: 1px outset #f00;
+	background: var(--colorOne);
 	border-radius: 50%;
-	width: 1em;
+	border: 1px outset var(--colorOne);
 	height: 1em;
+	justify-self: center;
+	width: 1em;
 }

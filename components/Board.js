@@ -1,4 +1,5 @@
 import Knob from './Knob.js';
+import { board } from './Board.module.css';
 
 export default Board;
 
@@ -10,9 +11,5 @@ function Board() {
 	const size = 6;
 	const rows = range(size);
 	const cols = range(size);
-	return (
-		<main>
-			{rows.map(() => cols.map(() => <Knob />))}
-		</main>
-	);
+	return <main className={board}>{rows.map(() => cols.map(() => <Knob />))}</main>;
 }

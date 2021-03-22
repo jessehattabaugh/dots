@@ -1,9 +1,9 @@
-import styles from './Knob.module.css';
+import {knob} from './Knob.module.css';
 
 export default Knob;
 
 function Knob() {
 	return (
-		<button className={styles.knob}></button>
+		<button className={knob}></button>
 	);
 }
