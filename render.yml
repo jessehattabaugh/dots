@@ -1,0 +1,10 @@
+services:
+- buildCommand: npm run build 
+  env: static
+  name: dots
+  plan: starter
+  pullRequestPreviewsEnabled: true 
+  startCommand: npm start
+  staticPublishPath: www
+  type: web
+  
