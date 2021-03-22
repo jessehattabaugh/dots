@@ -1,0 +1,6 @@
+.knob {
+	border: 1px outset #f00;
+	border-radius: 50%;
+	width: 1em;
+	height: 1em;
+}
