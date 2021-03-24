@@ -8,6 +8,9 @@ function HomePage() {
 			<header>
 				<h1>dots</h1>
 			</header>
+			<form>
+				<label><input type="number" min="2" max="9" /></label>
+			</form>
 			<nav>
 				<Link href="/timed">
 					<a>Timed</a>

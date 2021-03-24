@@ -1,9 +1,14 @@
-import {knob} from './Knob.module.css';
+
+import { knob } from './Knob.module.css';
 
 export default Knob;
 
-function Knob() {
+function Knob({onMouseDownHandler}) {
+
 	return (
-		<button className={knob}></button>
+		<button
+			className={knob}
+			onMouseDown={onMouseDownHandler}
+		></button>
 	);
 }
