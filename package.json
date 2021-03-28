@@ -1,30 +1,31 @@
 {
-	"author": "Jesse Hattabaugh<arkanciscan@gmail.com>",
-	"bugs": {
-		"url": "https://github.com/jessehattabaugh/dots/issues"
-	},
-	"description": "a game about dots",
 	"devDependencies": {
-		"next": "^10.0.9",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2"
+		"@sveltejs/adapter-node": "next",
+		"@sveltejs/kit": "next",
+		"@typescript-eslint/eslint-plugin": "^4.19.0",
+		"@typescript-eslint/parser": "^4.19.0",
+		"eslint": "^7.22.0",
+		"eslint-config-prettier": "^8.1.0",
+		"eslint-plugin-svelte3": "^3.1.0",
+		"prettier": "~2.2.1",
+		"prettier-plugin-svelte": "^2.2.0",
+		"svelte": "^3.29.0",
+		"svelte-preprocess": "^4.0.0",
+		"tslib": "^2.0.0",
+		"typescript": "^4.0.0",
+		"vite": "^2.1.0"
 	},
-	"homepage": "https://github.com/jessehattabaugh/dots#readme",
-	"license": "UNLICENSED",
+	"engines": {
+		"node": ">= 12.17.0"
+	},
 	"name": "dots",
-	"private": "true",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/jessehattabaugh/dots.git"
-	},
 	"scripts": {
-		"build": "next build",
-		"debug": "next build --debug",
-		"dev": "next dev",
-		"export": "npm run build && next export",
-		"profile": "next build --profile",
-		"start": "npm run build && next start",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "svelte-kit build",
+		"dev": "svelte-kit dev --open",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint .",
+		"start": "svelte-kit start"
 	},
-	"version": "0.0.0"
+	"type": "module",
+	"version": "0.0.1"
 }
