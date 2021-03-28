@@ -1,0 +1,19 @@
+:root {
+	--colorBg: black;
+	--colorText: white;
+	--colorOne: DarkCyan;
+	--colorTwo: rgb(118, 195, 102);
+	--colorThree: rgb(255, 78, 87);
+	--colorFour: rgb(255, 123, 0);
+	--colorFive: rgb(153, 93, 168);
+}
+
+* {
+	background: var(--colorBg);
+	color: var(--colorText);
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: 0;
+}
