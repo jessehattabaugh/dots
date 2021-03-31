@@ -1,0 +1,22 @@
+{
+	"background_color": "black",
+	"display": "standalone",
+	"icons": [
+		{
+			"purpose": "maskable",
+			"sizes": "192x192",
+			"src": "favicon192.png",
+			"type": "image/png"
+		},
+		{
+			"purpose": "maskable",
+			"sizes": "512x512",
+			"src": "favicon512.png",
+			"type": "image/png"
+		}
+	],
+	"name": "dots",
+	"short_name": "dots",
+	"start_url": "/",
+	"theme_color": "black"
+}
