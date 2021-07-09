@@ -1,1 +1,1 @@
-console.log('this package is not meant to be installed');
+console.warn('this package is not meant to be installed');
