@@ -16,7 +16,6 @@
 		"game"
 	],
 	"license": "MIT",
-	"main": "index.js",
 	"name": "dots",
 	"private": true,
 	"repository": {
