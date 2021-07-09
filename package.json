@@ -6,9 +6,9 @@
 	"description": "a game about connecting dots",
 	"devDependencies": {
 		"kill-port": "^1.6.1",
-		"puppeteer": "^8.0.0",
-		"serve": "^11.3.2",
-		"start-server-and-test": "^1.12.0"
+		"puppeteer": "^10.1.0",
+		"serve": "^12.0.0",
+		"start-server-and-test": "^1.12.6"
 	},
 	"homepage": "https://github.com/jessehattabaugh/dots#readme",
 	"keywords": [
