@@ -6,18 +6,29 @@ class DotGrid extends LitElement {
 		return css`
 			:host {
 				display: grid;
-				grid-column-gap: calc(30vw / 6);
-				grid-row-gap: calc(30vw / 6);
-				margin: calc(30vw / 6);
-				grid-template-columns: repeat(6, 1fr);
+				grid-column-gap: calc(30vw / var(--size));
+				grid-row-gap: calc(30vw / var(--size));
+				margin: calc(30vw / var(--size));
+				grid-template-columns: repeat(var(--size), 1fr);
 				/*outline: 1px dashed red;*/
 			}
 		`;
 	}
+	static get properties() {
+		return {
+			size: { type: Number },
+		};
+	}
+
+	willUpdate(changedProperties) {
+		if (changedProperties.has('size')) {
+			this.rows = Array(this.size).fill('');
+			this.cols = Array(this.size).fill('');
+			this.style.setProperty('--size', this.size);
+		}
+	}
 
 	render() {
-		this.rows = Array(6).fill('');
-		this.cols = Array(6).fill('');
 		return html`${this.rows.map(() =>
 			this.cols.map(() => html`<dot-dot />`),
 		)}`;
