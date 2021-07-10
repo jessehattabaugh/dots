@@ -7,9 +7,9 @@ class DotDot extends LitElement {
 			:host {
 				background: blue;
 				border-radius: 50%;
-				height: calc(60vw / var(--size));
+				height: calc(40vw / var(--size));
 				/*outline: 1px dashed green;*/
-				width: calc(60vw / var(--size));
+				width: calc(40vw / var(--size));
 			}
 		`;
 	}

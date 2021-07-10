@@ -6,9 +6,9 @@ class DotGrid extends LitElement {
 		return css`
 			:host {
 				display: grid;
-				grid-column-gap: calc(30vw / var(--size));
-				grid-row-gap: calc(30vw / var(--size));
-				margin: calc(30vw / var(--size));
+				grid-column-gap: calc(50vw / var(--size));
+				grid-row-gap: calc(50vw / var(--size));
+				margin: calc(50vw / var(--size));
 				grid-template-columns: repeat(var(--size), 1fr);
 				/*outline: 1px dashed red;*/
 			}
